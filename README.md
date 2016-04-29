@@ -1,0 +1,2 @@
+# onmode
+on mode blog
