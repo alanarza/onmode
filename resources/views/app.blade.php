@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Blog Demo | Find All Together</title>
+	<title>Onmode</title>
 
 	<link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -58,31 +58,34 @@
 	<div class="fullscreenBackground"></div>
 
 	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/">Onmode</a>
-			</div>
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="/">Onmode</a>
+	    </div>
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="{{ url('/home') }}">Blog</a>
-					</li>
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="{{ url('/home') }}">Blog</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 					<li>
-						<a href="{{ url('/login') }}">Login</a>
+						<a href="{{ url('/login') }}">Iniciar Session</a>
 					</li>
 					<li>
-						<a href="{{ url('/register') }}">Register</a>
+						<a href="{{ url('/register') }}">Registrarse</a>
 					</li>
 					@else
 					<li class="dropdown">
@@ -90,25 +93,26 @@
 						<ul class="dropdown-menu" role="menu">
 							@if (Auth::user()->can_post())
 							<li>
-								<a href="{{ url('/new-post') }}">Add new post</a>
+								<a href="{{ url('/new-post') }}">Agregar Post</a>
 							</li>
 							<li>
-								<a href="{{ url('/user/'.Auth::id().'/posts') }}">My Posts</a>
+								<a href="{{ url('/user/'.Auth::id().'/posts') }}">Mis Posts</a>
 							</li>
 							@endif
 							<li>
-								<a href="{{ url('/user/'.Auth::id()) }}">My Profile</a>
+								<a href="{{ url('/user/'.Auth::id()) }}">Mi Perfil</a>
 							</li>
 							<li>
-								<a href="{{ url('/logout') }}">Logout</a>
+								<a href="{{ url('/logout') }}">Cerrar Session</a>
 							</li>
 						</ul>
 					</li>
 					@endif
 				</ul>
-			</div>
-		</div>
+	    </div>
+	  </div>
 	</nav>
+
 
 	<div class="container">
 		@if (Session::has('message'))
@@ -144,7 +148,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<p>Copyright &copy; 2015 | <a href="/">Onmode Labs</a></p>
+				<p>Copyright &copy; 2016 | <a href="/">Onmode</a></p>
 			</div>
 		</div>
 	</div>

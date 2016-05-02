@@ -1,7 +1,11 @@
 @extends('app')
 
+@section('title')
+<h3>Bienvenido</h3>
+@endsection
+
 @section('content')
 
-	<h1>Hola</h1>
+	<h3>Hola</h3>
 
 @endsection

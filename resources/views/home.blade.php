@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('title')
-{{$title}}
+<h3>Ultimos Posts</h3>
 @endsection
 
 @section('content')
@@ -16,9 +16,9 @@ There is no post till now. Login and write a new post now!!!
             <h3><a href="{{ url('/'.$post->slug) }}">{{ $post->title }}</a>
                 @if(!Auth::guest() && ($post->author_id == Auth::user()->id || Auth::user()->is_admin()))
                     @if($post->active == '1')
-                    <button class="btn btn-primary" style="float: right"><a href="{{ url('edit/'.$post->slug)}}">Edit Post</a></button>
+                    <a href="{{ url('edit/'.$post->slug)}}" class="btn btn-primary" style="float: right">Editar Post</a>
                     @else
-                    <button class="btn btn-primary" style="float: right"><a href="{{ url('edit/'.$post->slug)}}">Edit Draft</a></button>
+                    <a href="{{ url('edit/'.$post->slug)}}" class="btn btn-primary" style="float: right">Editar Borrador</a>
                     @endif
                 @endif
             </h3>
@@ -27,7 +27,7 @@ There is no post till now. Login and write a new post now!!!
         </div>
         <div class="list-group-item">
             <article>
-                {!! str_limit($post->body, $limit = 1500, $end = '....... <a href='.url("/".$post->slug).'>Read More</a>') !!}
+                {!! str_limit($post->body, $limit = 1500, $end = '....... <a href='.url("/".$post->slug).'>Ver mas</a>') !!}
             </article>
         </div>
     </div>
