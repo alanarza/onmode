@@ -25,25 +25,16 @@
   				<div class="row">
 
 					<div class="col-md-7">
-					<div class="panel panel-primary">
+						
+					<div class="panel panel-primary" id="contenido_2">
 					  	<div class="panel-heading">
-					    	<h3 class="panel-title">Post del Dia</h3>
+					    	<h3 class="panel-title">{{ $post->title }}</h3>
 					  	</div>
 					  	<div class="panel-body">
 					   
-							<h3>A title</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
-						</div>
-					</div>
-
-					<div class="panel panel-primary">
-					  	<div class="panel-heading">
-					    	<h3 class="panel-title">Post del Dia</h3>
-					  	</div>
-					  	<div class="panel-body">
-					   
-							<h3>A title</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
+							<article>
+		                        {!! str_limit($post->body, $limit = 1500, $end = '....... <a href='.url("/".$post->slug).'>Ver mas</a>') !!}
+		                    </article>
 						</div>
 					</div>
 
@@ -51,12 +42,12 @@
 
 					<div class="col-md-5">
 						
-						<div class="panel panel-info">
+						<div class="panel panel-info" >
 						  <div class="panel-heading">
 						    <h3 class="panel-title">Ultimos Tweets</h3>
 						  </div>
 						  <div class="panel-body">
-						    <a class="twitter-timeline" href="https://twitter.com/eliezer_arza" data-widget-id="727508199595773952">Tweets por el @eliezer_arza.</a>
+						    <a class="twitter-timeline" href="https://twitter.com/eliezer_arza" data-widget-id="727508199595773952">Tweets por @eliezer_arza.</a>
 						  </div>
 						</div>
 
@@ -66,7 +57,7 @@
 			</div>
 		</div>
 
-		<br><br>
+		<br><br><br><br>
 
 		<div class="section"> 
 			<div class="container"> 

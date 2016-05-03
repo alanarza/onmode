@@ -10,38 +10,6 @@
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
-	<!-- Este script debemos de ponerle en el <head> -->
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 2,
-  interval: 30000,
-  width: 'auto',
-  height: ,
-  theme: {
-    shell: {
-      background: '#000000', /* Cambiar por "transparent" si queremos el fondo transparente */
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#000000', /* Cambiar por "transparent" si queremos el fondo transparente */
-      color: '#ffffff',
-      links: '#ffffff'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    behavior: 'all'
-  }
-}).render().setUser('eliezer_arza').start();
-</script>
-
-
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
@@ -91,6 +59,12 @@ new TWTR.Widget({
 	    height: 100%;
 	    background-size: cover;
 	    overflow: hidden;
+	}
+
+	#contenido_2 {
+		overflow: auto;
+		min-width: 50px;
+		min-width: 50px;
 	}
 
 	</style>

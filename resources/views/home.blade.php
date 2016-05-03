@@ -7,7 +7,15 @@
 @section('content')
 
 @if ( !$posts->count() )
-There is no post till now. Login and write a new post now!!!
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+        <div class="panel-body" style="margin: auto;">
+          La pagina no tiene post, inicia session y crea uno!!
+        </div>
+        </div>
+    </div>
+</div>
 @else
 <div class="row">
     <div class="col-md-8">
