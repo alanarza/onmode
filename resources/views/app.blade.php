@@ -8,6 +8,40 @@
 
 	<link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+	<!-- Este script debemos de ponerle en el <head> -->
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 'auto',
+  height: ,
+  theme: {
+    shell: {
+      background: '#000000', /* Cambiar por "transparent" si queremos el fondo transparente */
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000', /* Cambiar por "transparent" si queremos el fondo transparente */
+      color: '#ffffff',
+      links: '#ffffff'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('eliezer_arza').start();
+</script>
+
+
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
@@ -48,6 +82,15 @@
 	/* selected link */
 	a:active {
 	    color: white;
+	}
+
+	.jumbotron {
+	    position: relative;
+	    background: #000 url("images/background.jpg") center center;
+	    width: 100%;
+	    height: 100%;
+	    background-size: cover;
+	    overflow: hidden;
 	}
 
 	</style>
@@ -133,19 +176,9 @@
 			</ul>
 		</div>
 		@endif
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h2>@yield('title')</h2>
-						@yield('title-meta')
-					</div>
-					<div class="panel-body">
-						@yield('content')
-					</div>
-				</div>
-			</div>
-		</div>
+		
+		@yield('content')
+
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<p>Copyright &copy; 2016 | <a href="/">Onmode</a></p>
