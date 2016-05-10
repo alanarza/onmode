@@ -8,18 +8,14 @@ use App\Http\Requests;
 
 use App\Posts;
 
-use App\User;
+use App\Destacados;
 
 class IndexController extends Controller
 {
     public function index()
     {	
-    	$id = User::where('role','admin')
-    				->select('id')
-    				->get();
+    	$posts = Destacados::paginate(5);
 
-    	$post = Posts::latest('id')->first();
-
-    	return view('index', compact('post'));
+    	return view('index', compact('posts'));
     }
 }

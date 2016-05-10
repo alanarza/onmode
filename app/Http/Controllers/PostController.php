@@ -38,6 +38,7 @@ class PostController extends Controller
 	{
 		$post = new Posts();
 		$post->title = $request->get('title');
+		$post->description = $request->get('description');
 		$post->body = $request->get('body');
 		$post->slug = str_slug($post->title);
 		$post->author_id = $request->user()->id;

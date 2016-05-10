@@ -26,17 +26,33 @@
 
 					<div class="col-md-7">
 						
-					<div class="panel panel-primary" id="contenido_2">
-					  	<div class="panel-heading">
-					    	<h3 class="panel-title">{{ $post->title }}</h3>
-					  	</div>
-					  	<div class="panel-body">
-					   
-							<article>
-		                        {!! str_limit($post->body, $limit = 1500, $end = '....... <a href='.url("/".$post->slug).'>Ver mas</a>') !!}
-		                    </article>
+						<div class="panel panel-primary">
+						  	<div class="panel-heading">
+						    	<h3 class="panel-title">Ultimos Posts</h3>
+						  	</div>
+
+						  	<ul class="list-group">
+						  	@foreach($posts as $post)
+						  	  
+						  	  	<a href="{{ url('/'.$post->destacados_post->slug) }}" class="list-group-item">
+
+						  	  	<div class="media">
+						  	  	<div class="media-body">
+				              		<div class="col-md-12">
+										<h4 class="list-group-item-heading">{{ $post->destacados_post->title }}</h4>
+						    			<h5 class="list-group-item-text">{{ str_limit($post->destacados_post->description,195) }}</h5>
+									</div>
+								</div>
+								</div>
+
+				              	</a>
+				            
+				            @endforeach
+				            <div class="col-md-offset-4"><?php echo $posts->render(); ?></div>
+				            </ul>
+
+							
 						</div>
-					</div>
 
 					</div>
 
