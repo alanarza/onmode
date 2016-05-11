@@ -73,9 +73,9 @@
 			</div>
 		</div>
 
-		<br><br><br><br>
 
-		<div class="section"> 
+		<section class="aboutme" id="aboutme">
+
 			<div class="container"> 
 				<div class="row">
 					<div class="col-md-4"> 
@@ -88,9 +88,87 @@
 					</div>
 				</div>
 			 </div>
-		 </div>
+		 </section>
 
-		 <br><br>
+
+		<br><br><br><br>
+
+		 <div class="section"> 
+			<div class="col-md-8">
+  				<div class="row">
+
+					<div class="panel panel-default">
+					  <div class="panel-body">
+					    <legend>Conocimiento Tecnico</legend>
+
+					    	PHP
+
+						    <div class="progress progress-striped">
+								<div class="progress-bar progress-bar-info" style="width: 80%"></div>
+							</div>
+
+							Sql
+
+							<div class="progress progress-striped">
+							  	<div class="progress-bar progress-bar-warning" style="width: 70%"></div>
+							</div>
+
+							Laravel
+
+							<div class="progress progress-striped">
+							  	<div class="progress-bar progress-bar-success" style="width: 75%"></div>
+							</div>
+
+							Bootstrap
+
+							<div class="progress progress-striped">
+							  	<div class="progress-bar progress-bar-danger" style="width: 90%"></div>
+							</div>
+
+					  </div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-4">
+  				<div class="row">
+
+  					<div class="panel panel-default">
+					  <div class="panel-body">
+					    <legend>Conocimiento Tecnico</legend>
+
+					    	PHP
+
+						    <div class="progress progress-striped">
+								<div class="progress-bar" style="width: 80%"></div>
+							</div>
+
+							Sql
+
+							<div class="progress progress-striped">
+							  	<div class="progress-bar" style="width: 70%"></div>
+							</div>
+
+							Laravel
+
+							<div class="progress progress-striped">
+							  	<div class="progress-bar" style="width: 75%"></div>
+							</div>
+
+							Bootstrap
+
+							<div class="progress progress-striped">
+							  	<div class="progress-bar" style="width: 90%"></div>
+							</div>
+
+					  </div>
+					</div>
+
+  				</div>
+			</div>
+
+		</div>
 
 	</div>
 </div>

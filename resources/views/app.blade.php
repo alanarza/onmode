@@ -7,6 +7,7 @@
 	<title>Onmode</title>
 
 	<link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
@@ -68,6 +69,8 @@
 	}
 
 	</style>
+
+
 
 </head>
 <body>
@@ -163,5 +166,22 @@
 	<!-- Scripts -->
 	<script src="{{ asset('/js/jquery.min-2.1.3.js') }}"></script>
 	<script src="{{ asset('/js/bootstrap.min-3.3.1.js') }}"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+		 
+			$(window).scroll(function(){
+				var barra = $(window).scrollTop();
+				var posicion = barra * 0.40;
+		 
+				$('body').css({
+					'background-position': '0 ' + posicion + 'px'
+				});
+			});
+		 
+		});
+		
+	</script>
 </body>
 </html>
