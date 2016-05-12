@@ -11,6 +11,34 @@
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+	<script>
+   
+		<!----- JQUERY FOR SLIDING NAVIGATION --->   
+		$(document).ready(function() {
+		  $('a[href*=#]').each(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		    && location.hostname == this.hostname
+		    && this.hash.replace(/#/,'') ) {
+		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		       if ($target) {
+		         var targetOffset = $target.offset().top;
+
+		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+		         $(this).click(function() {
+		            $("#nav li a").removeClass("active");
+		            $(this).addClass('active');
+		           $('html, body').animate({scrollTop: targetOffset}, 1000);
+		           return false;
+		         });
+		      }
+		    }
+		  });
+
+		});
+
+	</script>
+
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
@@ -21,63 +49,10 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-<style type="text/css">
-
-	.fullscreenBackground {
-    
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: url("{{ asset('images/bg.jpg') }}") no-repeat center center;
-        background-size: cover;
-        z-index: -1;
-  	}
-
-  	/* unvisited link */
-	a:link {
-	    color: white;
-	}
-
-	/* visited link */
-	a:visited {
-	    color:	white;
-	}
-
-	/* mouse over link */
-	a:hover {
-	    color: white;
-	}
-
-	/* selected link */
-	a:active {
-	    color: white;
-	}
-
-	.jumbotron {
-	    position: relative;
-	    background: #000 url("images/background.jpg") center center;
-	    width: 100%;
-	    height: 100%;
-	    background-size: cover;
-	    overflow: hidden;
-	}
-
-	#contenido_2 {
-		overflow: auto;
-		min-width: 50px;
-		min-width: 50px;
-	}
-
-	</style>
-
-
-
 </head>
 <body>
 
-	<div class="fullscreenBackground"></div>
-
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -134,7 +109,7 @@
 	</nav>
 
 
-	<div class="container">
+	
 		@if (Session::has('message'))
 		<div class="flash alert-info">
 			<p class="panel-body">
@@ -155,13 +130,7 @@
 		@endif
 		
 		@yield('content')
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<p>Copyright &copy; 2016 | <a href="/">Onmode</a></p>
-			</div>
-		</div>
-	</div>
+	
 
 	<!-- Scripts -->
 	<script src="{{ asset('/js/jquery.min-2.1.3.js') }}"></script>

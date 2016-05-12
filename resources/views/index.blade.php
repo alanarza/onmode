@@ -5,6 +5,10 @@
 @endsection
 
 @section('content')
+<div id="slide1">
+<div class="content">
+
+<div class="container">
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 
@@ -73,8 +77,13 @@
 			</div>
 		</div>
 
+</div> 
+</div>
+</div> 
+		
 
-		<section class="aboutme" id="aboutme">
+<div id="slide2">
+<div class="content" >		
 
 			<div class="container"> 
 				<div class="row">
@@ -87,11 +96,8 @@
 						<h1>Eliezer Arza</h1> <h3>Desarrollo de software</h3> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
 					</div>
 				</div>
-			 </div>
-		 </section>
+			 
 
-
-		<br><br><br><br>
 
 		 <div class="section"> 
 			<div class="col-md-8">
@@ -167,8 +173,14 @@
 
   				</div>
 			</div>
+			</div>
 
 		</div>
+
+		<div id="copyright"><p>Copyright &copy; 2016 | <a href="/">Onmode</a></p></div> 
+
+</div>
+</div>
 
 	</div>
 </div>
