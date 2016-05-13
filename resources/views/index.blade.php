@@ -86,103 +86,130 @@
 <div class="content" >		
 
 			<div class="container"> 
-				<div class="row">
-					<div class="col-md-4"> 
-					<img src="images/yo.jpeg" class="center-block img-circle img-responsive">
-					</div>
 
-					<div class="col-md-6">
-					<br>
-						<h1>Eliezer Arza</h1> <h3>Desarrollo de software</h3> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-					</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-4"> 
+							<img src="images/yo.jpeg" class="center-block img-circle img-responsive">
+							</div>
+
+							<div class="col-md-6">
+							<br>
+								<h1>Eliezer Arza</h1> <h3>Desarrollo de software</h3> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+							</div>
+						</div>
+			 		</div>
 				</div>
-			 
-
-
-		 <div class="section"> 
-			<div class="col-md-8">
-  				<div class="row">
-
-					<div class="panel panel-default">
-					  <div class="panel-body">
-					    <legend>Conocimiento Tecnico</legend>
-
-					    	PHP
-
-						    <div class="progress progress-striped">
-								<div class="progress-bar progress-bar-info" style="width: 80%"></div>
-							</div>
-
-							Sql
-
-							<div class="progress progress-striped">
-							  	<div class="progress-bar progress-bar-warning" style="width: 70%"></div>
-							</div>
-
-							Laravel
-
-							<div class="progress progress-striped">
-							  	<div class="progress-bar progress-bar-success" style="width: 75%"></div>
-							</div>
-
-							Bootstrap
-
-							<div class="progress progress-striped">
-							  	<div class="progress-bar progress-bar-danger" style="width: 90%"></div>
-							</div>
-
-					  </div>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="col-md-4">
-  				<div class="row">
-
-  					<div class="panel panel-default">
-					  <div class="panel-body">
-					    <legend>Conocimiento Tecnico</legend>
-
-					    	PHP
-
-						    <div class="progress progress-striped">
-								<div class="progress-bar" style="width: 80%"></div>
-							</div>
-
-							Sql
-
-							<div class="progress progress-striped">
-							  	<div class="progress-bar" style="width: 70%"></div>
-							</div>
-
-							Laravel
-
-							<div class="progress progress-striped">
-							  	<div class="progress-bar" style="width: 75%"></div>
-							</div>
-
-							Bootstrap
-
-							<div class="progress progress-striped">
-							  	<div class="progress-bar" style="width: 90%"></div>
-							</div>
-
-					  </div>
-					</div>
-
-  				</div>
-			</div>
-			</div>
 
 		</div>
 
-		<div id="copyright"><p>Copyright &copy; 2016 | <a href="/">Onmode</a></p></div> 
-
 </div>
 </div>
 
+<div id="slide3">
+<div class="content">
+
+
+	<div class="container">	
+
+	<legend>Mis Habilidades</legend>
+
+		<div class="col-md-6">
+			<div class="row">
+				<div class="panel panel-default">
+				  	<div class="panel-body">
+
+				    	<legend>Conocimiento Tecnico</legend>
+
+				    	PHP
+
+					    <div class="progress progress-striped">
+							<div class="progress-bar progress-bar-info" style="width: 80%"></div>
+						</div>
+
+						Sql
+
+						<div class="progress progress-striped">
+						  	<div class="progress-bar progress-bar-warning" style="width: 70%"></div>
+						</div>
+
+						Laravel
+
+						<div class="progress progress-striped">
+						  	<div class="progress-bar progress-bar-success" style="width: 75%"></div>
+						</div>
+
+						Bootstrap
+
+						<div class="progress progress-striped">
+						  	<div class="progress-bar progress-bar-danger" style="width: 90%"></div>
+						</div>
+
+				  	</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="row">
+				<div class="panel panel-default">
+				  <div class="panel-body">
+
+				    <legend>Conocimiento Tecnico</legend>
+
+				    	PHP
+
+					    <div class="progress progress-striped">
+							<div class="progress-bar" style="width: 80%"></div>
+						</div>
+
+						Sql
+
+						<div class="progress progress-striped">
+						  	<div class="progress-bar" style="width: 70%"></div>
+						</div>
+
+						Laravel
+
+						<div class="progress progress-striped">
+						  	<div class="progress-bar" style="width: 75%"></div>
+						</div>
+
+						Bootstrap
+
+						<div class="progress progress-striped">
+						  	<div class="progress-bar" style="width: 90%"></div>
+						</div>
+
+				  </div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+</div>
+</div>
+
+<div id="slide4">
+<div class="content">
+
+	asdasdasd
+
+</div>
+</div>
+
+<div id="slide5">
+<div class="content">
+
+	asdasdasd
+
+</div>
+</div>
+
+<div id="copyright"><p>Copyright &copy; 2016 | <a href="/">Onmode</a></p></div> 
+
+</div>
 </div>
 
 @endsection
