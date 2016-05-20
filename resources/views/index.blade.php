@@ -87,7 +87,12 @@
 
 			<div class="container"> 
 
-				<div class="panel panel-default">
+				<div class="panel panel-default" >
+
+						<div class="well" id="miwell">
+						  Look, I'm in a well!
+						</div>
+
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-md-4"> 
